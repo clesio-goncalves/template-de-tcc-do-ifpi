@@ -1,0 +1,30 @@
+% Classe do documento
+\documentclass[oneside,a4paper,12pt]{report}
+
+% Pacotes e comandos customizados
+\include{meta}
+
+% Início do texto
+\begin{document}
+
+\include{pre}   % Capa, prefácio e afins
+\include{cap1}	% Capítulo 1: Introdução
+\include{cap2}	% Capítulo 2: ...
+\include{final}	% Capítulo 3: Considerações Finais
+
+\begin{singlespacing}
+
+% Formato da bibliografia
+\bibliographystyle{abntex2-alf}
+
+% Arquivo .bib
+\bibliography{referencias}
+
+\end{singlespacing}
+
+
+% Apêndice(s)
+\include{apendice}
+
+% Fim do texto
+\end{document}
